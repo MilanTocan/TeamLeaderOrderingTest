@@ -73,7 +73,6 @@ export class Edit extends Component {
 
     handleQuantityChange(event) {
         const newQuantity = parseInt(event.target.value, 10);
-        console.warn("QUANTITY HANDLER", event.target.value);
         if (newQuantity > 0) {
             const orderDetailIndex = parseInt(event.target.getAttribute('data-index'), 10);
 
@@ -198,6 +197,7 @@ export class Edit extends Component {
                             validateState={this.getValidationState}
                             handleProduct={this.handleProductChange}
                             handleQuantity={this.handleQuantityChange}
+                            remove={this.removeDetail}
                         />
                     )}
                 </Row>
