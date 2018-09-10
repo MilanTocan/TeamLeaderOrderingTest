@@ -1,0 +1,35 @@
+﻿/* extra padding so our footer never obscures our page */
+body {
+    padding-bottom: 50px;
+}
+
+/* fixed bottom footer */
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.fixed-bottom > p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    line-height: 25px;
+}
+
+/* small padding for xs screens */
+.small-padding {
+    padding: 0 15px 0 15px;
+}
+
+/* simple spacer */
+.small-padding-top {
+    padding-top: 15px;
+}
+
+/* hide .invalid-feedback when form-control is valid */
+.form-control:valid ~ .invalid-feedback {
+    display: none;
+}
